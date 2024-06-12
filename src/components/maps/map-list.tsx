@@ -1,4 +1,4 @@
-import maps from "../../data/maps.json";
+import maps from "@/data/maps.json";
 
 export function MapList() {
   return (
