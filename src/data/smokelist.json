@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "de_dust_2",
+    "smokes": [
+      { "name": "Xbox smoke", "video": "url", "team": "T" },
+      { "name": "Mid door", "video": "url", "team": "T" },
+      { "name": "Mid to B smoke", "video": "url", "team": "T" },
+      { "name": "Mid to B full cover CT", "video": "url", "team": "T" },
+      { "name": "Left side mid", "video": "url", "team": "T" },
+      { "name": "B door smoke", "video": "url", "team": "T" },
+      { "name": "B window smoke", "video": "url", "team": "T" },
+      { "name": "B door smoke from short", "video": "url", "team": "T" },
+      { "name": "Long A corner", "video": "url", "team": "T" },
+      {
+        "name": "Cross smoke from long (ramp smoke)",
+        "video": "url",
+        "team": "T"
+      },
+      { "name": "Cross smoke from long 2", "video": "url", "team": "T" },
+      { "name": "CT smoke from long", "video": "url", "team": "T" },
+      { "name": "Short smoke from long", "video": "url", "team": "T" },
+      { "name": "Come out short smoke", "video": "url", "team": "T" },
+      { "name": "CT smoke from short", "video": "url", "team": "T" },
+      { "name": "CT mid smoke", "video": "url", "team": "CT" },
+      { "name": "Long door smoke", "video": "url", "team": "CT" },
+      { "name": "Top mid smoke from short", "video": "url", "team": "CT" }
+    ]
+  },
+  {
+    "slug": "de_inferno",
+    "smokes": [
+      { "name": "Top mid", "video": "url", "team": "" },
+      { "name": "B site", "video": "url" },
+      { "name": "A site", "video": "url" }
+    ]
+  }
+]
