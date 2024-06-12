@@ -1,0 +1,16 @@
+[
+  { "name": "Dust 2", "slug": "de_dust2", "image": "/maps/de_dust2.webp" },
+  { "name": "Inferno", "slug": "de_inferno", "image": "/maps/de_inferno.webp" },
+  { "name": "Mirage", "slug": "de_mirage", "image": "/maps/de_mirage.webp" },
+  { "name": "Nuke", "slug": "de_nuke", "image": "/maps/de_nuke.webp" },
+  {
+    "name": "Overpass",
+    "slug": "de_overpass",
+    "image": "/maps/de_overpass.webp"
+  },
+  { "name": "Train", "slug": "de_train", "image": "/maps/de_train.webp" },
+  { "name": "Vertigo", "slug": "de_vertigo", "image": "/maps/de_vertigo.webp" },
+  { "name": "Ancient", "slug": "de_ancient", "image": "/maps/de_ancient.webp" },
+  { "name": "Office", "slug": "cs_office", "image": "/maps/cs_office.webp" },
+  { "name": "Italy", "slug": "cs_italy", "image": "/maps/cs_italy.webp" }
+]
