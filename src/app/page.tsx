@@ -1,13 +1,13 @@
+import { Heading } from "@/components/heading";
+import { MapsList } from "@/components/maps/maps-list";
+
 export default function Home() {
   return (
     <main>
-      <h1>Hello, World!</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio est,
-        officia corporis facilis aliquid corrupti reiciendis sunt ea maiores
-        ratione, obcaecati, repellat vel reprehenderit eligendi dolor?
-        Doloremque ipsum voluptas facilis.
-      </p>
+      <Heading as="h2" className="text-center mb-4 uppercase font-extrabold">
+        Welcome to Cs2Utilities! 🔫
+      </Heading>
+      <MapsList />
     </main>
   );
 }
