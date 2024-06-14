@@ -1,15 +1,202 @@
 [
-  { "name": "Dust 2", "slug": "de_dust2", "image": "/maps/de_dust2.webp" },
-  { "name": "Inferno", "slug": "de_inferno", "image": "/maps/de_inferno.webp" },
-  { "name": "Mirage", "slug": "de_mirage", "image": "/maps/de_mirage.webp" },
-  { "name": "Nuke", "slug": "de_nuke", "image": "/maps/de_nuke.webp" },
+  {
+    "name": "Dust 2",
+    "slug": "de_dust2",
+    "image": "/maps/de_dust2.webp",
+    "utilities": [
+      {
+        "name": "Xbox smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid door",
+        "video": "/video2.mp4",
+        "team": "ct",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid to B smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "molotov"
+      }
+    ]
+  },
+  {
+    "name": "Mirage",
+    "slug": "de_mirage",
+    "image": "/maps/de_mirage.webp",
+    "utilities": [
+      {
+        "name": "Xbox smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid door",
+        "video": "/video2.mp4",
+        "team": "ct",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid to B smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "molotov"
+      }
+    ]
+  },
+  {
+    "name": "Nuke",
+    "slug": "de_nuke",
+    "image": "/maps/de_nuke.webp",
+    "utilities": [
+      {
+        "name": "Xbox smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid door",
+        "video": "/video2.mp4",
+        "team": "ct",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid to B smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "molotov"
+      }
+    ]
+  },
   {
     "name": "Overpass",
     "slug": "de_overpass",
-    "image": "/maps/de_overpass.webp"
+    "image": "/maps/de_overpass.webp",
+    "utilities": [
+      {
+        "name": "Xbox smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid door",
+        "video": "/video2.mp4",
+        "team": "ct",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid to B smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "molotov"
+      }
+    ]
   },
-  { "name": "Vertigo", "slug": "de_vertigo", "image": "/maps/de_vertigo.webp" },
-  { "name": "Ancient", "slug": "de_ancient", "image": "/maps/de_ancient.webp" },
-  { "name": "Anubis", "slug": "de_anubis", "image": "/maps/de_anubis.webp" },
-  { "name": "Office", "slug": "cs_office", "image": "/maps/cs_office.webp" }
+  {
+    "name": "Vertigo",
+    "slug": "de_vertigo",
+    "image": "/maps/de_vertigo.webp",
+    "utilities": [
+      {
+        "name": "Xbox smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid door",
+        "video": "/video2.mp4",
+        "team": "ct",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid to B smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "molotov"
+      }
+    ]
+  },
+  {
+    "name": "Ancient",
+    "slug": "de_ancient",
+    "image": "/maps/de_ancient.webp",
+    "utilities": [
+      {
+        "name": "Xbox smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid door",
+        "video": "/video2.mp4",
+        "team": "ct",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid to B smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "molotov"
+      }
+    ]
+  },
+  {
+    "name": "Anubis",
+    "slug": "de_anubis",
+    "image": "/maps/de_anubis.webp",
+    "utilities": [
+      {
+        "name": "Xbox smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid door",
+        "video": "/video2.mp4",
+        "team": "ct",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid to B smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "molotov"
+      }
+    ]
+  },
+  {
+    "name": "Office",
+    "slug": "cs_office",
+    "image": "/maps/cs_office.webp",
+    "utilities": [
+      {
+        "name": "Xbox smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid door",
+        "video": "/video2.mp4",
+        "team": "ct",
+        "type": "smoke"
+      },
+      {
+        "name": "Mid to B smoke",
+        "video": "/video.mp4",
+        "team": "t",
+        "type": "molotov"
+      }
+    ]
+  }
 ]

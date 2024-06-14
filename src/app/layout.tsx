@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -26,6 +27,7 @@ export default function RootLayout({
           <footer className="h-12 flex items-center justify-center">
             Footer &copy;
           </footer>
+          <TailwindIndicator />
         </div>
       </body>
     </html>
