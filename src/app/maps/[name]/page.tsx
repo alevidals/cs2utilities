@@ -1,12 +1,11 @@
 "use client";
 
-import { Heading } from "@/components/heading";
+import { MapBanner } from "@/components/map-banner";
 
 import { UtilitiesList } from "@/components/utilities-list";
 import { UtilityFilters } from "@/components/utility-filters";
 import maps from "@/data/maps.json";
 import type { TeamFilter, Utility, UtilityTypeFilter } from "@/lib/types";
-import Image from "next/image";
 import { notFound, useSearchParams } from "next/navigation";
 import { useState } from "react";
 
@@ -78,16 +77,7 @@ export default function MapPage(props: Props) {
 
   return (
     <div>
-      <div className="w-full h-40 relative rounded-xl overflow-hidden mb-4">
-        <Heading
-          as="h2"
-          className="absolute w-full h-full flex justify-center items-center z-20"
-        >
-          {map.name}
-        </Heading>
-        <div className="w-full h-full bg-black/30 absolute z-10" />
-        <Image src={map.image} alt={map.name} fill className="object-cover" />
-      </div>
+      <MapBanner title={map.name} imageUrl={map.image} />
       <div className="flex flex-col items-center">
         <div className="w-full">
           <UtilityFilters />
