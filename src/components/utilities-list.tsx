@@ -19,7 +19,7 @@ type Props = {
 export function UtilitiesList(props: Props) {
   return (
     <>
-      <div className="hidden md:block border p-4 rounded-xl w-80 h-[35rem] overflow-y-scroll shrink-0 scrollbar-hide">
+      <div className="hidden md:block border p-4 rounded-xl w-64 h-[35rem] overflow-y-scroll shrink-0 scrollbar-hide">
         <RadioGroup
           defaultValue={props.selectedUtility.name}
           onValueChange={(utility) => {
