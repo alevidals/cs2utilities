@@ -1,26 +1,13 @@
 "use client";
 
 import { Heading } from "@/components/heading";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
 import { UtilitiesList } from "@/components/utilities-list";
+import { UtilityFilters } from "@/components/utility-filters";
 import maps from "@/data/maps.json";
 import type { TeamFilter, Utility, UtilityTypeFilter } from "@/lib/types";
-import { getHref } from "@/lib/utils";
 import Image from "next/image";
-import {
-  notFound,
-  usePathname,
-  useRouter,
-  useSearchParams,
-} from "next/navigation";
+import { notFound, useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 type Props = {
@@ -59,8 +46,6 @@ export default function MapPage(props: Props) {
   if (!map) return notFound();
 
   const searchParams = useSearchParams();
-  const pathname = usePathname();
-  const router = useRouter();
 
   const [selectedUtility, setSelectedUtility] = useState<Utility>(
     map.utilities[0],
@@ -103,83 +88,24 @@ export default function MapPage(props: Props) {
         <div className="w-full h-full bg-black/30 absolute z-10" />
         <Image src={map.image} alt={map.name} fill className="object-cover" />
       </div>
-      <div className="flex gap-x-4 mb-4">
-        <Select
-          value={teamParam}
-          onValueChange={(key) => {
-            const href = getHref({
-              action: "set",
-              searchParams,
-              pathname,
-              paramsToSet: [{ team: key }],
-            });
-
-            router.replace(href);
-          }}
-        >
-          <SelectTrigger className="w-full">
-            <SelectValue placeholder="Select the team" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectItem value="all">All</SelectItem>
-              <SelectItem value="ct">CT</SelectItem>
-              <SelectItem value="t">T</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-        <Select
-          value={utilityTypeParam}
-          onValueChange={(key) => {
-            const href = getHref({
-              action: "set",
-              searchParams,
-              pathname,
-              paramsToSet: [{ "utility-type": key }],
-            });
-
-            router.replace(href);
-          }}
-        >
-          <SelectTrigger className="w-full">
-            <SelectValue placeholder="Select the utility" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectItem value="all">All</SelectItem>
-              <SelectItem value="smoke">Smoke</SelectItem>
-              <SelectItem value="molotov">Molotov</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-        <Button
-          onClick={() => {
-            const href = getHref({
-              action: "delete",
-              pathname,
-              searchParams,
-              paramsToDelete: ["team", "utility-type"],
-            });
-
-            router.replace(href);
-          }}
-        >
-          Reset filters
-        </Button>
-      </div>
-      <div className="flex flex-col gap-4 md:flex-row">
-        <UtilitiesList
-          utilities={utilities}
-          selectedUtility={selectedUtility}
-          setSelectedUtility={handleOnChangeSelectedUtility}
-        />
-        <div>
-          <video
-            src={selectedUtility.video}
-            className="aspect-video w-full rounded-xl"
-            muted
-            controls
+      <div className="flex flex-col items-center">
+        <div className="w-full">
+          <UtilityFilters />
+        </div>
+        <div className="flex flex-col gap-4 md:flex-row">
+          <UtilitiesList
+            utilities={utilities}
+            selectedUtility={selectedUtility}
+            setSelectedUtility={handleOnChangeSelectedUtility}
           />
+          <div className="h-[35rem] flex items-center justify-center">
+            <video
+              src={selectedUtility.video}
+              className="aspect-video max-h-full w-full rounded-xl"
+              muted
+              controls
+            />
+          </div>
         </div>
       </div>
     </div>
